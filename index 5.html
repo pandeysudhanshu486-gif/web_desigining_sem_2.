@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>employee verification</title>
+    <title>Employee System</title>
+    <link rel="stylesheet" href="exp 5.css">
 </head>
 <body>
-    <div class ="container">
-        <h2>employe data</h2> 
-        <label for="employes id">enter the employes id</label><br>
-        <label for="employee name">enter the employes name</label><br>
-        <label for="salary">enter the salary</label><br>
-        <label for="department">enter the department</label><br>
-        <button onclick="Addemployee()">Add employee</button><br>
-        <button onclick="DisplayAll()">Display All</button>
-        <button onclick="average()">Average</button>
-    </div>
-    
+
+<h1>Employee Management System</h1>
+
+
+<div class="form">
+    <input type="text" id="name" placeholder="Employee Name">
+    <input type="number" id="id" placeholder="Employee ID">
+    <input type="number" id="salary" placeholder="Salary">
+    <input type="text" id="dept" placeholder="Department">
+    <button onclick="addEmployee()">Add Employee</button>
+</div>
+
+<div class="buttons">
+    <button onclick="displayEmployees()">Display All</button>
+    <button onclick="filterSalary()">Salary > 50000</button>
+    <button onclick="totalSalary()">Total Salary</button>
+    <button onclick="averageSalary()">Average Salary</button>
+    <button onclick="countDepartment()">Count Department</button>
+</div>
+
+<div id="output"></div>
+
+<script src="exp 5.js"></script>
 </body>
 </html>
